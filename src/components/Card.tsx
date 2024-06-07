@@ -16,12 +16,12 @@ export default function Card ({ title, description, medida, price, priceEf, colo
     <div className="rounded-md p-3 max-h-42 shadow-md bg-white">
       <div className="flex flex-col md:flex-row gap-3 items-center">
         <img
-          className="w-full h-48 md:w-40 md:h-40 rounded-lg object-cover"
+          className="w-full h-40 md:h-full md:w-40 rounded-lg object-cover"
           alt=""
           src={image}
         />
         <div className="text-left w-full flex flex-col gap-1">
-          <h2 className="text-xl font-semibold mb-2 uppercase">{title} {medida}</h2>
+          <h2 className="text-xl font-extrabold mb-2 uppercase">{title} {medida}</h2>
           <p className="text-sm">{description}</p>
           <div>
             {colors.length > 0 && <p className="my-2 text-xs uppercase font-semibold">Colores disponibles</p>}

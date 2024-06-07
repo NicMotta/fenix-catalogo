@@ -361,7 +361,7 @@
       "name": "Rebarbador",
       "medida": "",
       "description": "",
-      "image": "",
+      "image": "https://acdn.mitiendanube.com/stores/003/078/539/products/rebarbador-95332691332af6ce2f17146649403612-1024-1024.webp",
       "price": "4.946,40",
       "priceEf": "4.580,37",
       "colors": []
@@ -372,7 +372,7 @@
       "name": "Mini torno manual",
       "medida": "",
       "description": "",
-      "image": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GY9Rjl-HyG3YGO49hyzACnn9GMSKxakRtw&s",
       "price": "6.674,40",
       "priceEf": "6.180,49",
       "colors": []
@@ -383,9 +383,20 @@
       "name": "Pinza de agarre",
       "medida": "",
       "description": "",
-      "image": "",
+      "image": "https://m.media-amazon.com/images/I/311OmB0kNCL._AC_.jpg",
       "price": "2.090,00",
       "priceEf": "1.935,34",
+      "colors": []
+    },
+    {
+      "id": 32,
+      "categoria": "tools",
+      "name": "Minisoplete",
+      "medida": "",
+      "description": "",
+      "image": "https://acdn.mitiendanube.com/stores/959/045/products/d_nq_np_2x_651755-mla53446747187_012023-f1-8aa45372bcdff6ea8016820101865712-240-0.jpg",
+      "price": "falta",
+      "priceEf": "falta",
       "colors": []
     }
   ]
