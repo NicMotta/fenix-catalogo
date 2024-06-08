@@ -458,17 +458,6 @@
         "woody",
         "aurora"
       ]
-    },
-    {
-      "id": 35,
-      "categoria": "pigmentos",
-      "name": "Pigmento Translúcido",
-      "medida": "10 gr.",
-      "description": "Pigmento traslúcido para resina. Son pigmentos muy concentrado y con poder cubritivo.",
-      "image": "../images/pigmento-translucido.jpg",
-      "price": "5.356,80",
-      "priceEf": "4.960,00",
-      "colors": ["negro", "amarillo", "verde", "rojo", "azul"]
     }
   ]
 }
