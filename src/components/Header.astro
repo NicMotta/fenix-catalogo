@@ -1,15 +1,24 @@
 ---
 import { Image } from "astro:assets";
 import Logo from "../../public/logo.jpeg";
+import Instagram from "../assets/instagram.svg";
 ---
 
 <header class="flex flex-col m-auto text-center p-3 items-center">
   <Image class="rounded-full w-14" src={Logo} alt="" />
   <h1 class="text-3xl md:text-5xl my-2 font-extrabold">FÉNIX</h1>
   <h2 class="font-semibold text-xl">RESINAS E INSUMOS</h2>
+  <p class="text-sm">Distribuidores oficiales de resinas Diamont</p>
+  <div class="my-4">
+    <p class="uppercase font-bold">Puntos de retiro</p>
+    <p class="uppercase">Beccar | San Fernando | Belgrano</p>
+  </div>
   <a
-    class="p-2 border border-black m-1 rounded-md hover:bg-black hover:text-white"
     href="https://instagram.com/fenix.epoxi"
-    target="_blank">Instagram: @fenix.epoxi</a
+    target="_blank"
+    class="flex gap-1 items-center"
   >
+    <Image class="w-8 fill-white" src={Instagram} alt="" />
+    <p>@fenix.epoxi</p>
+  </a>
 </header>

@@ -2,11 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar";
 import Products from "../components/Products";
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Fénix - Resina e insumos">
   <main class="m-auto mb-10 max-w-3xl p-2">
     <NavBar client:only="react" />
     <Products client:only="react" />
+    <Button />
   </main>
 </Layout>
