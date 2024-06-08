@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useStore } from '@nanostores/react'
 import { $filter } from '../store'
 import Card from './Card'
+import Mancheta from './Mancheta'
 import STOCK from '../constants/stock.json'
 
 export default function Products () {
@@ -15,8 +16,9 @@ export default function Products () {
   return (
     <div>
       <ul className="grid grid-cols-1 gap-6">
-      {
-        productList.map((product) => (
+        {
+        productList.length <= 0 ? <Mancheta />
+        : productList.map((product) => (
           <Card
             key={product.id}
             title={product.name}

@@ -16,7 +16,7 @@ export default function Card ({ title, description, medida, price, priceEf, colo
     <div className="rounded-md p-3 max-h-42 shadow-md bg-white">
       <div className="flex flex-col md:flex-row gap-3 items-center">
         <img
-          className="w-full h-40 md:h-full md:w-40 rounded-lg object-cover"
+          className="w-full h-96 md:h-full md:w-40 rounded-lg object-cover"
           alt=""
           src={image}
         />
