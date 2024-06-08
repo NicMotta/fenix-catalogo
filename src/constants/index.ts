@@ -1,9 +1,10 @@
 export const MENU_ITEMS = [
   { id: 'all', name: 'Todos' },
   { id: 'resina', name: 'Resinas' },
+  { id: 'glitters', name: 'Glitters' },
   { id: 'pigmentos', name: 'Pigmentos' },
   { id: 'tintas', name: 'Tintas' },
   { id: 'moldes', name: 'Moldes' },
   { id: 'tools', name: 'Herramientas' },
-  { id: 'insumos', name: 'Insumos' }
+  { id: 'insumos', name: 'Insumos' },
 ]
