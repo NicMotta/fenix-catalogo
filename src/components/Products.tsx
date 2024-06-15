@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useStore } from '@nanostores/react'
 import { $filter } from '../store'
 import Card from './Card'
-import Mancheta from './Mancheta'
+import Loader from './Loader'
 import { NAMES, URL_LIST } from '../constants'
 
 export default function Products () {
@@ -31,7 +31,7 @@ export default function Products () {
       <h2 className='text-3xl text-center font-bold my-3'>{NAMES[filter]}</h2>
       <ul className="grid grid-cols-1 gap-6">
         {
-        productList.length <= 0 ? <Mancheta />
+        productList.length <= 0 ? <Loader />
         : productList.map((product, index) => (
           product.show === 'TRUE' &&
           <Card
