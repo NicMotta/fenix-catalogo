@@ -28,7 +28,7 @@ export default function Products () {
 
   return (
     <div>
-      <h2 className='text-3xl font-bold my-3'>{NAMES[filter]}</h2>
+      <h2 className='text-3xl text-center font-bold my-3'>{NAMES[filter]}</h2>
       <ul className="grid grid-cols-1 gap-6">
         {
         productList.length <= 0 ? <Mancheta />
