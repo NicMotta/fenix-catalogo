@@ -1,5 +1,5 @@
 import { atom } from 'nanostores'
 
-type Filter = 'all' | 'resina' | 'tools' | 'pigmentos' | 'tintas' | 'moldes' | 'insumos'
+type Filter = 'all' | 'resina' | 'herramientas' | 'pigmentos' | 'tintas' | 'moldes' | 'insumos' | 'glitters'
 
 export const $filter = atom<Filter>('all')

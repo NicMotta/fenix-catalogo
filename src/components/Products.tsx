@@ -3,31 +3,47 @@ import { useStore } from '@nanostores/react'
 import { $filter } from '../store'
 import Card from './Card'
 import Mancheta from './Mancheta'
-import STOCK from '../constants/stock.json'
+import { NAMES, URL_LIST } from '../constants'
 
 export default function Products () {
   const filter = useStore($filter)
-  const [productList, setProductList] = useState(STOCK.products)
+  const [data, setData ] = useState([])
+  const [productList, setProductList] = useState(data)
 
   useEffect(() => {
-    setProductList(STOCK.products.filter((product) => filter === 'all' ? STOCK : product.categoria === filter))
-  }, [filter])
+    setProductList(data.filter((product) => filter === 'all' ? data : product.category === filter))
+  }, [filter, data])
+
+  useEffect(() => {
+    fetch(URL_LIST)
+      .then(response => response.text())
+      .then(data => {
+        const products = data.split(/\r?\n/g).map(row => {
+            const [show, code, category, name, medida, description, colors, m, price, stock] = row.split('\t')
+            return { show, code, category, name, medida, description, colors, m, price, stock }
+          })
+          setData(products.slice(1, products.length))
+      })
+  }, [])
 
   return (
     <div>
+      <h2 className='text-3xl font-bold my-3'>{NAMES[filter]}</h2>
       <ul className="grid grid-cols-1 gap-6">
         {
         productList.length <= 0 ? <Mancheta />
-        : productList.map((product) => (
+        : productList.map((product, index) => (
+          product.show === 'TRUE' &&
           <Card
-            key={product.id}
+            key={index}
             title={product.name}
             medida={product.medida}
+            code={product.code}
             description={product.description}
-            price={product.price}
-            priceEf={product.priceEf}
-            colors={product.colors}
-            image={product.image}
+            price='0'
+            priceEf={product.price}
+            colors={product.colors && product.colors.split(',')}
+            image={product.code}
           />
         ))
       }

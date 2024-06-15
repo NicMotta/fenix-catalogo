@@ -374,33 +374,44 @@
       "description": "Viene con 10 mechas de distintos tamaños.",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GY9Rjl-HyG3YGO49hyzACnn9GMSKxakRtw&s",
       "price": "6.674,40",
-      "priceEf": "6.180,00",
+      "priceEf": "6.000,00",
       "colors": []
     },
     {
       "id": 31,
       "categoria": "tools",
-      "name": "Pinza",
+      "name": "Mini taladro eléctrico",
       "medida": "",
-      "description": "Ideal para colocar detalles pequeños, apliques o flores secas.",
-      "image": "../images/pinza.png",
-      "price": "2.970,00",
-      "priceEf": "2.090,00",
+      "description": "Viene con 3 mechas de distintos tamaños.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9GY9Rjl-HyG3YGO49hyzACnn9GMSKxakRtw&s",
+      "price": "13.000,00",
+      "priceEf": "11.000,00",
       "colors": []
     },
     {
       "id": 32,
       "categoria": "tools",
+      "name": "Pinza",
+      "medida": "",
+      "description": "Ideal para colocar detalles pequeños, apliques o flores secas.",
+      "image": "../images/pinza.png",
+      "price": "1.600,00",
+      "priceEf": "1.200,00",
+      "colors": []
+    },
+    {
+      "id": 33,
+      "categoria": "tools",
       "name": "Mini soplete",
       "medida": "",
       "description": "Se utiliza para eliminar las burbujas de aire de la resina.",
       "image": "../images/minisoplete.jpg",
-      "price": "6.609,60",
-      "priceEf": "6.120,00",
+      "price": "5.200,00",
+      "priceEf": "4.700,00",
       "colors": ["Consultar disponibilidad"]
     },
     {
-      "id": 33,
+      "id": 34,
       "categoria": "glitters",
       "name": "Glitter",
       "medida": "5 gr.",
@@ -424,7 +435,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": 35,
       "categoria": "glitters",
       "name": "Glossy Glitter",
       "medida": "5 gr.",

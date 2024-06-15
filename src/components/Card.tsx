@@ -8,9 +8,10 @@ interface Props {
   priceEf: string;
   colors: string[];
   image: string;
+  code: string;
 }
 
-export default function Card ({ title, description, medida, price, priceEf, colors, image }: Props) {
+export default function Card ({ title, description, medida, code, priceEf, colors, image }: Props) {
 
   return (
     <div className="rounded-md p-3 max-h-42 shadow-md bg-white">
@@ -18,11 +19,12 @@ export default function Card ({ title, description, medida, price, priceEf, colo
         <img
           className="w-full h-96 md:h-full md:w-40 rounded-lg object-cover"
           alt=""
-          src={image}
+          src={`/public/images/${image}.png`}
         />
         <div className="text-left w-full flex flex-col gap-1">
-          <h2 className="text-xl font-extrabold mb-2 uppercase">{title} {medida}</h2>
+          <h2 className="text-xl font-extrabold uppercase">{title} {medida}</h2>
           <p className="text-sm">{description}</p>
+          <p className="text-sm text-gray-600">Código: {code}</p>
           <div>
             {colors.length > 0 && <p className="my-2 text-xs uppercase font-semibold">Colores disponibles</p>}
             <div className="flex gap-2 my-2 max-w-sm sm:max-w-full flex-wrap">
@@ -37,11 +39,7 @@ export default function Card ({ title, description, medida, price, priceEf, colo
             </div>
           </div>
           <p className="text-xl font-medium">
-            $ {price}
-            <span className="text-sm"> - Tarjeta</span>
-          </p>
-          <p className="text-xl font-medium">
-            $ {priceEf}
+            {priceEf}
             <span className="text-sm"> - Efectivo / Transferencia</span>
           </p>
         </div>
@@ -49,4 +47,3 @@ export default function Card ({ title, description, medida, price, priceEf, colo
   </div>
   )
 }
-
