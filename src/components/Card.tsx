@@ -19,7 +19,7 @@ export default function Card ({ title, description, medida, code, priceEf, color
         <img
           className="w-full h-96 md:h-full md:w-40 rounded-lg object-cover"
           alt=""
-          src={`/public/images/${image}.png`}
+          src={`/images/${image}.png`}
         />
         <div className="text-left w-full flex flex-col gap-1">
           <h2 className="text-xl font-extrabold uppercase">{title} {medida}</h2>
