@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { useStore } from '@nanostores/react'
 import { $filter } from '../store'
 import Card from './Card'
-import Loader from './Loader'
+import Loader from './Loader.tsx'
 import { NAMES, URL_LIST } from '../constants'
 
 export default function Products () {
