@@ -19,8 +19,8 @@ export default function Products () {
       .then(response => response.text())
       .then(data => {
         const products = data.split(/\r?\n/g).map(row => {
-            const [show, code, category, name, medida, description, colors, m, price, stock] = row.split('\t')
-            return { show, code, category, name, medida, description, colors, m, price, stock }
+            const [show, code, category, name, medida, description, colors, m, price, stock, promotion] = row.split('\t')
+            return { show, code, category, name, medida, description, colors, m, price, stock, promotion }
           })
           setData(products.slice(1, products.length))
       })
@@ -44,6 +44,7 @@ export default function Products () {
             priceEf={product.price}
             colors={product.colors && product.colors.split(',')}
             image={product.code}
+            promotion={product.promotion}
           />
         ))
       }

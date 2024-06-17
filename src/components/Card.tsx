@@ -1,5 +1,3 @@
-import { formatCurrency } from "../utility/helpers";
-
 interface Props {
   title: string;
   description: string;
@@ -9,9 +7,10 @@ interface Props {
   colors: string[];
   image: string;
   code: string;
+  promotion: string;
 }
 
-export default function Card ({ title, description, medida, code, priceEf, colors, image }: Props) {
+export default function Card ({ title, description, medida, code, priceEf, colors, image, promotion }: Props) {
 
   return (
     <div className="rounded-md p-3 max-h-42 shadow-md bg-white">
@@ -42,6 +41,8 @@ export default function Card ({ title, description, medida, code, priceEf, color
             {priceEf}
             <span className="text-sm"> - Efectivo / Transferencia</span>
           </p>
+          {promotion &&
+            <p className="text-orange-600 font-semibold">{promotion}</p>}
         </div>
       </div>
   </div>
