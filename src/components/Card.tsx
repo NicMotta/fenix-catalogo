@@ -8,9 +8,10 @@ interface Props {
   image: string;
   code: string;
   promotion: string;
+  stock: number;
 }
 
-export default function Card ({ title, description, medida, code, priceEf, colors, image, promotion }: Props) {
+export default function Card ({ title, description, medida, code, priceEf, colors, image, promotion, stock }: Props) {
 
   return (
     <div className="rounded-md p-3 max-h-42 shadow-md bg-white">
@@ -43,6 +44,8 @@ export default function Card ({ title, description, medida, code, priceEf, color
           </p>
           {promotion &&
             <p className="text-orange-600 font-semibold">{promotion}</p>}
+          {stock <= 0 &&
+          <p className="text-orange-600 font-semibold">Momentáneamente sin stock</p>}
         </div>
       </div>
   </div>

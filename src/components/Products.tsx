@@ -4,6 +4,7 @@ import { $filter } from '../store'
 import Card from './Card'
 import Loader from './Loader.tsx'
 import { NAMES, URL_LIST } from '../constants'
+import Mancheta from './Mancheta'
 
 export default function Products () {
   const filter = useStore($filter)
@@ -29,6 +30,7 @@ export default function Products () {
   return (
     <div>
       <h2 className='text-3xl text-center font-bold my-3'>{NAMES[filter]}</h2>
+      { filter === 'resina' && <Mancheta /> }
       <ul className="grid grid-cols-1 gap-6">
         {
         productList.length <= 0 ? <Loader />
@@ -45,6 +47,7 @@ export default function Products () {
             colors={product.colors && product.colors.split(',')}
             image={product.code}
             promotion={product.promotion}
+            stock={product.stock}
           />
         ))
       }
