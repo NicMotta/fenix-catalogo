@@ -45,7 +45,7 @@ export default function Products () {
             price='0'
             priceEf={product.price}
             colors={product.colors && product.colors.split(',')}
-            image={product.code}
+            image={product.image}
             promotion={product.promotion}
             stock={product.stock}
           />

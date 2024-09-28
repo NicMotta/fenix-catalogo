@@ -5,10 +5,10 @@ interface Props {
   price: string;
   priceEf: string;
   colors: string[];
-  image: string;
   code: string;
   promotion: string;
   stock: number;
+  image?: string;
 }
 
 export default function Card ({ title, description, medida, code, priceEf, colors, image, promotion, stock }: Props) {
@@ -19,7 +19,7 @@ export default function Card ({ title, description, medida, code, priceEf, color
         <img
           className="w-full h-full md:h-full md:w-40 rounded-lg object-cover"
           alt=""
-          src={`/images/${image}.png`}
+          src={image ? image :`/images/${code}.png`}
         />
         <div className="text-left w-full flex flex-col gap-1">
           <h2 className="text-xl font-extrabold uppercase">{title} {medida}</h2>
