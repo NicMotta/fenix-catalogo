@@ -25,8 +25,8 @@ export const URL_LIST = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSlJiaq
 export const URL_WORKSHOP = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSlJiaq1ReMBHjTG9JLa-ZFVRPtnhO0TwnNTrmcarCe3UflvziTF1rxgBHgqt-24VQ18Uy0j08eN3O1/pub?gid=1888657510&single=true&output=tsv"
 
 export const PASSWORDS = {
-  lapiceras: 'LAPICERAS2024',
   resinaInicial: 'TALLERINICIAL',
+  lapiceras: 'LAPICERAS2024',
 }
 
 export const REDIRECTIONS = {
