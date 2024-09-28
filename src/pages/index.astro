@@ -3,9 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar";
 import Products from "../components/Products";
 import Aprender from "../components/Aprender.astro";
+import FreeShip from "../components/FreeShip.astro";
 ---
 
 <Layout title="Fénix - Resina e insumos">
+  <FreeShip />
   <main class="m-auto mb-10 max-w-3xl p-2">
     <Aprender />
     <NavBar client:only="react" />
