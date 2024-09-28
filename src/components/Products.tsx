@@ -20,8 +20,8 @@ export default function Products () {
       .then(response => response.text())
       .then(data => {
         const products = data.split(/\r?\n/g).map(row => {
-            const [show, code, category, name, medida, description, colors, m, price, stock, promotion] = row.split('\t')
-            return { show, code, category, name, medida, description, colors, m, price, stock, promotion }
+            const [show, code, image, category, name, medida, description, colors, m, price, stock, promotion] = row.split('\t')
+            return { show, code, image, category, name, medida, description, colors, m, price, stock, promotion }
           })
           setData(products.slice(1, products.length))
       })

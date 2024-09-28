@@ -12,7 +12,11 @@
   "dependencies": {
     "@astrojs/react": "^3.5.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/eb-garamond": "^5.1.0",
     "@fontsource-variable/noto-sans": "^5.0.5",
+    "@fontsource-variable/noto-serif": "^5.1.0",
+    "@fontsource-variable/piazzolla": "^5.1.0",
+    "@fontsource/merriweather": "^5.1.0",
     "@nanostores/react": "github:nanostores/react",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

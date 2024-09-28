@@ -42,6 +42,7 @@ export default function Card ({ title, description, medida, code, priceEf, color
             {priceEf}
             <span className="text-sm"> - Efectivo / Transferencia</span>
           </p>
+          <p className="text-sm">Tarjetas de crédito o link de pago con un 8% de recargo.</p>
           {promotion &&
             <p className="text-orange-600 font-semibold">{promotion}</p>}
           {stock <= 0 &&

@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import LoginComponent from "../../components/Login";
+import { PASSWORDS, REDIRECTIONS } from "../../constants";
+---
+
+<Layout title="Fénix - Resina e insumos">
+  <h1 class="text-xl text-center font-bold uppercase my-2">
+    Taller de Lapiceras
+  </h1>
+
+  <LoginComponent
+    client:only="react"
+    code={PASSWORDS.lapiceras}
+    storage="lapiceras"
+    redirect={REDIRECTIONS.lapiceras}
+  />
+</Layout>

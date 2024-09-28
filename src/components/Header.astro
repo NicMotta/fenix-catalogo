@@ -4,21 +4,34 @@ import Logo from "../../public/logo.jpeg";
 import Instagram from "../assets/instagram.svg";
 ---
 
-<header class="flex flex-col m-auto text-center p-3 items-center">
+<header class="flex flex-col m-auto text-center p-3 items-center max-w-3xl">
   <Image class="rounded-full w-14" src={Logo} alt="" />
   <h1 class="text-3xl md:text-5xl my-2 font-extrabold">FÉNIX</h1>
   <h2 class="font-semibold text-xl">RESINAS E INSUMOS</h2>
-  <p class="text-sm">Distribuidores oficiales de resinas Diamont</p>
+  <p class="text-sm">Distribuidores oficiales de Resinas Diamont</p>
+  <a
+    class="flex gap-1 items-center my-4"
+    href="https://instagram.com/fenix.epoxi"
+    target="_blank"
+  >
+    <Image class="w-6 fill-white" src={Instagram} alt="" />
+    <p>Nuestro Instagram @fenix.epoxi</p>
+  </a>
   <div class="my-4">
     <p class="uppercase font-bold">Puntos de retiro</p>
     <p class="uppercase">Beccar | San Fernando | Belgrano</p>
+    <p class="uppercase font-bold mt-4">Envío gratis</p>
+    <p>
+      San Isidro, San Fernando, Tigre y alrededores en compras a partir de
+      $15.000.
+    </p>
+    <p>
+      Buenos Aires: 50% de descuento sobre el valor del envío en compras a
+      partir de $30.000.
+    </p>
+    <p>
+      Si haces una compra mayor a $70.000 ¡Te bonificamos el 100% del envío a
+      todo el país!
+    </p>
   </div>
-  <a
-    href="https://instagram.com/fenix.epoxi"
-    target="_blank"
-    class="flex gap-1 items-center"
-  >
-    <Image class="w-8 fill-white" src={Instagram} alt="" />
-    <p>@fenix.epoxi</p>
-  </a>
 </header>

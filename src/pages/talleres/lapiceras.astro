@@ -1,0 +1,25 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Checker from "../../components/Checker";
+import { PASSWORDS, URL_PDF, REDIRECTIONS } from "../../constants";
+---
+
+<Layout title="Fénix - Resina e insumos">
+  <h1 class="text-xl text-center font-bold uppercase my-2">
+    Taller de Lapiceras
+  </h1>
+
+  <Checker
+    client:only="react"
+    code={PASSWORDS.lapiceras}
+    storage="lapiceras"
+    redirect={REDIRECTIONS.lapiceras}
+    login={REDIRECTIONS.lapicerasLogin}
+  />
+  <iframe
+    class="m-auto"
+    src={URL_PDF.lapiceras}
+    width="640"
+    height="480"
+    allow="autoplay"></iframe>
+</Layout>

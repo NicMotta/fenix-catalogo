@@ -1,0 +1,26 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Checker from "../../components/Checker";
+import { PASSWORDS, URL_PDF, REDIRECTIONS } from "../../constants";
+---
+
+<Layout title="Fénix - Resina e insumos">
+  <h1 class="text-xl text-center font-bold uppercase my-2">
+    Taller de Resina Inicial
+  </h1>
+
+  <Checker
+    client:only="react"
+    code={PASSWORDS.resinaInicial}
+    storage="resinaInicial"
+    redirect={REDIRECTIONS.resinaInicial}
+    login={REDIRECTIONS.resinaInicialLogin}
+  />
+
+  <iframe
+    class="m-auto"
+    src={URL_PDF.resinaicial}
+    width="640"
+    height="480"
+    allow="autoplay"></iframe>
+</Layout>

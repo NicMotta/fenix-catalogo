@@ -1,0 +1,15 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Workshop from "../../components/Workshop";
+import Documentation from "../../components/Documentation.astro";
+---
+
+<Layout title="Fénix - Resina e insumos">
+  <main class="m-auto mb-10 max-w-3xl p-2">
+    <Documentation />
+    <h1 class="text-xl text-center font-bold uppercase my-2">
+      Nuestros próximos talleres y workshops
+    </h1>
+    <Workshop client:only="react" />
+  </main>
+</Layout>
