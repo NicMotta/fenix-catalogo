@@ -14,7 +14,7 @@ interface Props {
 export default function Card ({ title, description, medida, code, priceEf, colors, image, promotion, stock }: Props) {
 
   return (
-    <div className="rounded-md p-3 max-h-42 shadow-md bg-white">
+    <div className="rounded-md p-3 max-h-42 shadow-md border border-black bg-white">
       <div className="flex flex-col md:flex-row gap-3 items-center">
         <img
           className="w-full h-full md:h-full md:w-40 rounded-lg object-cover"

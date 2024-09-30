@@ -30,28 +30,27 @@ export default function Products () {
   return (
     <div>
       <h2 className='text-3xl text-center font-bold my-3'>{NAMES[filter]}</h2>
-      { filter === 'resina' && <Mancheta /> }
-      <ul className="grid grid-cols-1 gap-6">
-        {
-        productList.length <= 0 ? <Loader />
-        : productList.map((product, index) => (
-          product.show === 'TRUE' &&
-          <Card
-            key={index}
-            title={product.name}
-            medida={product.medida}
-            code={product.code}
-            description={product.description}
-            price='0'
-            priceEf={product.price}
-            colors={product.colors && product.colors.split(',')}
-            image={product.image}
-            promotion={product.promotion}
-            stock={product.stock}
-          />
-        ))
-      }
-    </ul>
+      { filter === 'resina-epoxica' && <Mancheta /> }
+      { productList.length <= 0 && <Loader /> }
+        <ul className="grid grid-cols-1 gap-6">
+          {productList.map((product, index) => (
+            product.show === 'TRUE' &&
+            <Card
+              key={index}
+              title={product.name}
+              medida={product.medida}
+              code={product.code}
+              description={product.description}
+              price='0'
+              priceEf={product.price}
+              colors={product.colors && product.colors.split(',')}
+              image={product.image}
+              promotion={product.promotion}
+              stock={product.stock}
+            />
+          ))
+        }
+      </ul>
     </div>
   )
 }

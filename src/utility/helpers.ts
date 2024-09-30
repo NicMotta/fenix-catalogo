@@ -7,3 +7,7 @@ export function getName(name: string) {
   const nameArray = name.split(' ')
   return nameArray[0]
 }
+
+export function getDescription(description: string) {
+  return description.split(', ')
+}
