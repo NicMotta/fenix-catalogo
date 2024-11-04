@@ -1,7 +1,7 @@
 export const MENU_ITEMS = [
   { id: 'all', name: 'Todos' },
   { id: 'resina-epoxica', name: 'Resina Epóxica' },
-  { id: 'resina-acrilica', name: 'Resina Acrilica / Eco' },
+  { id: 'resina-acrilica', name: 'Resina Acrílica / Eco' },
   { id: 'moldes', name: 'Moldes' },
   { id: 'glitters', name: 'Glitters' },
   { id: 'pigmentos', name: 'Pigmentos' },
